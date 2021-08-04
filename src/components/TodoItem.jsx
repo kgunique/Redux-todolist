@@ -28,7 +28,7 @@ const dispatch = useDispatch()
                 inputProps={{'aria-label':'secondary checkbox'}}/>
             
             {/* name */}
-            <p className={done?1:0 && 'todoItem--done'}>{name} </p>
+            <p className= {done && 'todoItem--done'}>{name} </p>
             <button onClick={handleDelete}><DeleteIcon/></button>  
 
         </div>
