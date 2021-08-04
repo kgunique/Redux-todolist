@@ -13,8 +13,8 @@ const todoSlice = createSlice({
   
         },
         setCheck:(state,action)=>{
-            state.todoList.map(item=>{
-                if (action.payload===item.id) {
+            state.todoList.map(item => {
+                if(action.payload===item.id) {
                     if (item.done===true) {
                         item.done=false
                     }else{
@@ -22,6 +22,7 @@ const todoSlice = createSlice({
                     }
                 }
             })
+            
         },
         setDelete:(state,action)=>{
             return {todoList:state.todoList.filter(todo=>todo.id!==action.payload.id)}

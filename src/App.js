@@ -21,6 +21,7 @@ function App() {
         <div className="todo_container">
           {todoList.map(item => (
             <TodoItem
+              key={item.id}
               name={item.item}
               done={item.done}
               id={item.id} />

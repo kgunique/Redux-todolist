@@ -14,4 +14,4 @@ const Totalcompleted = () => {
     )
 }
 
-export default Totalcompleted
+export default Totalcompleted;
